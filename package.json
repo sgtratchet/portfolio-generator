@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-generator",
+  "version": "1.0.0",
+  "description": "A generator for web developers portfolios",
+  "main": "app.js",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgtratchet/portfolio-generator.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "developer"
+  ],
+  "author": "Devin Ellsworth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgtratchet/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/sgtratchet/portfolio-generator#readme"
+}
