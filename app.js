@@ -1,4 +1,4 @@
-const profileDataArgs = process.argv.slice(2, process.argv.length);
+const profileDataArgs = process.argv.slice(2);
 // const name = profileDataArgs[0];
 // const github = profileDataArgs[1];
 const [name, github] = profileDataArgs;
