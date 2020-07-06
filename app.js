@@ -2,7 +2,7 @@
 // const [name, github] = profileDataArgs;
 const inquirer = require('inquirer');
 // const fs = require('fs');
-// const generatePage = require('./src/page-template.js');
+const generatePage = require('./src/page-template.js');
 // const pageHTML = generatePage(portfolioData);
 // // console.log(generatePage(name, github));
 // fs.writeFile('index.html', generatePage(name, github), err => {
@@ -28,7 +28,7 @@ const promptUser = ()=>{
     {
       type: 'input',
       name: 'github',
-      message: 'Enter your GitHub Username (required)',
+      message: 'Enter your GitHub Username (Required)',
       validate: githubInput =>{
         if(githubInput) {
           return true;
@@ -141,5 +141,11 @@ const promptProject = portfolioData => {
   promptUser()
   .then(promptProject)
   .then(portfolioData => {
-    console.log(portfolioData);
-  });
+    const pageHTML = generatePage(portfolioData);
+
+    fs.writeFile('./index.html', pageHTML, err => {
+      if (err) throw new Error(err);
+
+      console.log('Page created! Check out index.html in this directory to see it!');
+    });
+  })
