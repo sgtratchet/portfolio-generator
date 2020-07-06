@@ -22,7 +22,7 @@ const copyFile = styleContent => {
     return new Promise((resolve, reject) =>{
         fs.copyFile('./src/style.css', './dist/style.css', err => {
             if (err) {
-                console.log(err);
+                reject(err);
                 return;
             }
             resolve({
