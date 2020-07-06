@@ -4,7 +4,7 @@
   "description": "A generator for web developers portfolios",
   "main": "app.js",
   "dependencies": {
-    "inquirer": "^7.2.0"
+    "inquirer": "^7.3.0"
   },
   "devDependencies": {},
   "scripts": {

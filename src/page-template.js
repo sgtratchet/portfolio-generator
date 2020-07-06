@@ -97,4 +97,4 @@ const generateProjects = projectsArr => {
     </html>
     `;
   };
-  module.exports = generatePage;
+//   module.exports = generatePage;
