@@ -33,3 +33,4 @@ const copyFile = styleContent => {
         console.log('Style sheet copied successfully!');
     });
 }
+module.exports = { writeFile, copyFile };
